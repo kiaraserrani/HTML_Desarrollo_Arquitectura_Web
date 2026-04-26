@@ -157,6 +157,32 @@
         button:hover {
             background-color: #bc7413;
         }
+
+        form {
+            margin-top: 15px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1c2340;
+        }
+
+        textarea {
+            width: 80%;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            border: 1px solid #cfcfcf;
+            resize: none;
+            margin-bottom: 12px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -203,7 +229,18 @@
 
             <footer>
                 <p>¿Qué opinas sobre esta nueva IA para el desarrollo web?</p>
-                <button>¡Déjanos tu comentario!</button>
+
+                <form>
+                    <label for="comentario"> Dejá tu comentario:</label>
+
+                    <textarea 
+                        id="comentario"
+                        name="comentario"
+                        rows="4"
+                        placeholder="Escribí tu opinión aquí..."></textarea>
+
+                <button type="submit">Enviar comentario</button>
+                </form>
             </footer>
         </main>
     </article>
